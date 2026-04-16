@@ -1,1 +1,39 @@
+{% extends "base.html" %}
 
+{% block title %}Home — The Blog{% endblock %}
+
+{% block content %}
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <div class="eyebrow">Journal</div>
+    <h1>Latest Posts</h1>
+    <p>Thoughts, stories, and updates from the desk.</p>
+  </div>
+
+  {% if posts %}
+  <div class="post-list">
+    {% for post in posts|reverse %}
+    <article class="post-card">
+      <div class="post-meta">{{ post.date }}</div>
+      <h2>{{ post.title }}</h2>
+      <p>{{ post.content }}</p>
+      <div class="post-actions">
+        <a href="{{ url_for('edit', post_id=post.id) }}" class="btn btn-primary">Edit</a>
+        <a href="{{ url_for('delete', post_id=post.id) }}" class="btn btn-danger">Delete</a>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+  {% else %}
+  <div class="empty">
+    <div class="emoji">📝</div>
+    <h3>No posts yet</h3>
+    <p>Create your first post to get started.</p>
+    <p style="margin-top: 20px;">
+      <a href="{{ url_for('create') }}" class="btn btn-primary">+ New Post</a>
+    </p>
+  </div>
+  {% endif %}
+
+{% endblock %}
