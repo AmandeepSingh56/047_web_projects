@@ -1,27 +1,9 @@
-<<<<<<< HEAD
-# Capstone_Project_WebDevelopment
-=======
+
 # EventHub — Event Management Website
 
 A fully functional event management web app built with **Flask + HTML + CSS + JavaScript** for the Web Development Lab.
 
 ## 📁 Project Structure
-```
-event_management_website/
-├── app.py               # Flask entry point
-├── requirements.txt
-├── README.md
-├── templates/
-│   ├── base.html        # Shared layout (navbar, footer)
-│   ├── index.html       # Home / Landing page
-│   ├── events.html      # Events listing (with search + filter)
-│   ├── register.html    # Registration form
-│   ├── admin_login.html # Admin login page
-│   ├── admin.html       # Admin dashboard
-│   └── admin_edit.html  # Edit event form
-└── static/
-    ├── css/style.css    # All styles (responsive, dark theme)
-    └── js/script.js     # Validation, live search, animations
 ```
 
 ## 🚀 How to Run
