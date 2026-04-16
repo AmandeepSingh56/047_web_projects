@@ -11,40 +11,6 @@ ShopEasy is a beginner-friendly e-commerce website built using **Django** (Pytho
 
 ## 🗂️ Project Structure
 
-```
-ecommerce_website/
-│
-├── manage.py                      ← Django management script (run server here)
-│
-├── ecommerce_website/             ← Django project config folder
-│   ├── settings.py                ← Project settings (database, apps, etc.)
-│   ├── urls.py                    ← Main URL router
-│   └── wsgi.py                    ← Server entry point
-│
-└── store/                         ← Main app folder
-    ├── models.py                  ← Product database model
-    ├── views.py                   ← All page logic (homepage, cart, checkout)
-    ├── urls.py                    ← App URL patterns
-    ├── admin.py                   ← Django admin config
-    │
-    ├── migrations/                ← Database migration files
-    │   ├── 0001_initial.py
-    │   └── 0002_add_initial_products.py   ← Seeds 8 sample products
-    │
-    ├── templates/store/           ← HTML templates
-    │   ├── base.html              ← Base layout (navbar, footer)
-    │   ├── index.html             ← Homepage / Product listing
-    │   ├── cart.html              ← Shopping cart page
-    │   ├── checkout.html          ← Checkout form page
-    │   └── confirmation.html      ← Order confirmation page
-    │
-    └── static/store/
-        ├── css/style.css          ← All CSS styles
-        └── js/script.js           ← All JavaScript (AJAX cart logic)
-```
-
----
-
 ## ✅ Tasks Completed
 
 | Task | Description | Status |
